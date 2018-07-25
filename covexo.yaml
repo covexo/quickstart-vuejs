@@ -1,0 +1,21 @@
+name: my-vuejs-app
+containers:
+  - name: nodejs
+    image: 'covexo/quickstart-vuejs:latest'
+    runtimeOptions:
+      cmd: start
+      workDir: /app
+      entryPoint: npm
+    initScript: |-
+      mv  my-vuejs-app/* ./
+      rm -r my-vuejs-app/
+      npm install
+    env:
+      NODE_ENV: dev
+    persistentFolders:
+      - name: source-code
+        localSubPath: ./
+        containerPath: /app
+    routes:
+      - hostPrefix: ''
+        containerPort: 8080
