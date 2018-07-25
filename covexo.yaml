@@ -11,6 +11,7 @@ containers:
       rm -r my-vuejs-app/
       npm install
     env:
+      HOST: 0.0.0.0
       NODE_ENV: dev
     persistentFolders:
       - name: source-code
