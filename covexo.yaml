@@ -1,4 +1,4 @@
-name: my-vuejs-app
+name: app
 containers:
   - name: nodejs
     image: 'covexo/quickstart-vuejs:latest'
@@ -6,16 +6,14 @@ containers:
       cmd: start
       workDir: /app
       entryPoint: npm
-    initScript: |-
-      mv  my-vuejs-app/* ./
-      rm -r my-vuejs-app/
+    initScript: |
       npm install
     env:
       HOST: 0.0.0.0
       NODE_ENV: dev
     persistentFolders:
       - name: source-code
-        localSubPath: ./
+        localSubPath: ./app
         containerPath: /app
     routes:
       - hostPrefix: ''
