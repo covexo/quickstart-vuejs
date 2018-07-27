@@ -1,6 +1,6 @@
 # Quickstart
 
-1. Clone this project with `git clone https://github.com/covexo/quickstart-angular.git`
+1. Clone this project with `git clone https://github.com/covexo/quickstart-vuejs.git`
 2. Open the covexo Desktop Client (Download: [Windows](https://releases.covexo.com/win/devspace-manager.exe) | [Mac](https://releases.covexo.com/mac/devspace-manager.dmg) | [Linux](https://releases.covexo.com/linux/devspace-manager.AppImage))
 3. Create a new DevSpace from covexo file using the covexo.yaml contained in the quickstart-react repository, use the file's folder as local path
 4. Wait for the synchronization to finish ("Synchronization" tab) and for your container(s) to start
