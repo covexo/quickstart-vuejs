@@ -13,7 +13,7 @@ containers:
       NODE_ENV: dev
     persistentFolders:
       - name: source-code
-        localSubPath: ./
+        localSubPath: ./app
         containerPath: /app
     routes:
       - hostPrefix: ''
